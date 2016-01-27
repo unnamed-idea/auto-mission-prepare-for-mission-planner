@@ -9,13 +9,13 @@ class automission(object):
 		self.mlist=[] #each element of the array represents a command, ie waypoint, with its parameters
 		self.counter=1
 
-		#these two lines are by defoult, exists every mission planner file
+		#these two lines are by default, exists every mission planner file
 		self.mlist.append('QGC WPL 110\n')
 		self.mlist.append('0	1	0	0	0	0	0	0	0	0	0	1\n') 
 
 
 	def param_to_mcommand(self,*args): #takes command and its parameters, appends them
-										                 #to mlist while adjusting formatting
+					 #to mlist while adjusting formatting
 
 		string=str(self.counter)+'	'
 		self.counter+=1
